@@ -5,11 +5,13 @@ import Box from '@mui/material/Box';
 import { Grid, Stack, Typography, Divider, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import ProfileAvatarComponent from './templateComponents/ProfileAvatarComponent';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
+import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
+import EmailIcon from '@mui/icons-material/Email';
 
 
 
-
-
+const Location = "Palmarejo, Praia, Santiago, 7600"
 // const Item = styled(Paper)(({ theme }) => ({
 //     backgroundColor: '#000',
 //     ...theme.typography.body2,
@@ -52,27 +54,45 @@ export default function BasicGrid() {
                 </Grid>
 
                 <Grid item xs={12} md={9} >
-                    <List spacing={1}>
+                    <List spacing={2}>
 
-                        <ListItem>
-                            <Typography>Stefan Salvatory</Typography>
+                        <ListItem sx={{p: 0}} >
+                            <Typography>Dwayne Jhonson The Rock</Typography>
                         </ListItem>
 
-                        <ListItem >
+                        <ListItem sx={{p: 0}} >
                             <ListItemIcon>
                                 <LocationOnIcon />
                             </ListItemIcon>
                             <ListItemText
-                                primary="Single-line item"
+                                primary= {Location}
+                            />
+                        </ListItem >
+
+                        <ListItem sx={{p: 0}} >
+                            <ListItemIcon>
+                                <PhoneIphoneIcon />
+                            </ListItemIcon>
+                            <ListItemText
+                                primary= '+238 9352569'
                             />
                         </ListItem>
 
-                        <ListItem>
+                        <ListItem sx={{p: 0}} >
                             <ListItemIcon>
-                                <LocationOnIcon />
+                                <PhoneEnabledIcon />
                             </ListItemIcon>
                             <ListItemText
-                                primary="Single-line item"
+                                primary= '+238 9352569'
+                            />
+                        </ListItem>
+
+                        <ListItem sx={{p: 0}} >
+                            <ListItemIcon>
+                                <EmailIcon />
+                            </ListItemIcon>
+                            <ListItemText
+                                primary= 'therock@gmail.com'
                             />
                         </ListItem>
 
