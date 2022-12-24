@@ -2,8 +2,9 @@ import * as React from 'react';
 // import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 // import Paper from '@mui/material/Paper';
-import { Grid, Stack, Typography, Divider } from '@mui/material';
+import { Grid, Stack, Typography, Divider, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
 import ProfileAvatarComponent from './templateComponents/ProfileAvatarComponent';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 
 
 
@@ -46,20 +47,26 @@ export default function BasicGrid() {
 
             <Grid container spacing={2} sx={{ p: ' 30px 60px' }} >
 
-                <Grid item xs={12} md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
+                <Grid item xs={12} md={3} >
                     <ProfileAvatarComponent />
                 </Grid>
 
-                <Grid item xs={12} md={9}>
-                    <Stack spacing={1}>
-                        <Typography>Stephan Salvatory</Typography>
-                        <Typography>Cabo Verde, Santiago-Praia, Palmarejo, 7600</Typography>
-                        <Typography>+238 9352569</Typography>
-                        <Typography>+238 9567880</Typography>
-                        <Typography>steph.74lw@gmail.com</Typography>
-                        <Typography>Sexo Masculino | Data de nascimento 24 de Outubro de 1996 | Nacionalidade Cabo-
-                            verdiana</Typography>
-                    </Stack>
+                <Grid item xs={12} md={9} >
+                    <List spacing={1}>
+
+                        <ListItem>
+                            <Typography>Stefan Salvatory</Typography>
+                        </ListItem>
+                        <ListItem>
+                            <ListItemIcon>
+                                <LocationOnIcon />
+                            </ListItemIcon>
+                            <ListItemText
+                                primary="Single-line item"
+                            />
+                        </ListItem>
+
+                    </List>
                 </Grid>
 
             </Grid>
