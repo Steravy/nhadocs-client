@@ -24,11 +24,11 @@ export default function BasicGrid() {
 
             <Grid container spacing={2} sx={{ p: ' 30px 60px' }} >
 
-                <Grid item xs={12} md={3} sx={{ display: 'flex', justifyContent: 'center' }}>
+                <Grid item xs={12} md={3} >
                     <ProfileAvatarComponent />
                 </Grid>
 
-                <Grid item xs={12} md={9}>
+                <Grid item xs={12} md={9} >
                     <Stack spacing={1}>
                         <Typography>Stephan Salvatory</Typography>
                         <Typography>Cabo Verde, Santiago-Praia, Palmarejo, 7600</Typography>
