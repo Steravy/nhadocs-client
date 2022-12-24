@@ -57,6 +57,16 @@ export default function BasicGrid() {
                         <ListItem>
                             <Typography>Stefan Salvatory</Typography>
                         </ListItem>
+
+                        <ListItem >
+                            <ListItemIcon>
+                                <LocationOnIcon />
+                            </ListItemIcon>
+                            <ListItemText
+                                primary="Single-line item"
+                            />
+                        </ListItem>
+
                         <ListItem>
                             <ListItemIcon>
                                 <LocationOnIcon />
