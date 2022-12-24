@@ -8,6 +8,9 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
+import PersonIcon from '@mui/icons-material/Person';
+import DateRangeIcon from '@mui/icons-material/DateRange';
+import TourIcon from '@mui/icons-material/Tour';
 
 
 
@@ -93,6 +96,16 @@ export default function BasicGrid() {
                             </ListItemIcon>
                             <ListItemText
                                 primary= 'therock@gmail.com'
+                            />
+                        </ListItem>
+
+                        <ListItem sx={{p: 0}} >
+                            <ListItemIcon>
+                                <PersonIcon />
+                            </ListItemIcon>
+                            <ListItemText
+                                primary= {`Sexo Masculino | Data de nascimento 24 de Outubro de 1996 | Nacionalidade Cabo-
+                                verdiana`}
                             />
                         </ListItem>
 
