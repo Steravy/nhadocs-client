@@ -23,7 +23,7 @@ const Location = "Palmarejo, Praia, Santiago, 7600"
 //     color: theme.palette.text.primary,
 // }));
 
-export default function BasicGrid() {
+export default function TemplatePage() {
     return (
         <Box sx={{ flexGrow: 1, p: ' 80px 60px' }}>
             <Divider textAlign="left" >Informacao pessoal</Divider>
@@ -41,8 +41,8 @@ export default function BasicGrid() {
                         <Typography>+238 9352569</Typography>
                         <Typography>+238 9567880</Typography>
                         <Typography>steph.74lw@gmail.com</Typography>
-                        <Typography>Sexo Masculino | Data de nascimento 24 de Outubro de 1996 | Nacionalidade Cabo-
-                            verdiana</Typography>
+                        <Typography>Sexo Masculino | Data de nascimento 24 de Outubro de 1996 | Nacionalidade 
+                            Cabo-verdiana</Typography>
                     </Stack>
                 </Grid>
 
@@ -104,8 +104,8 @@ export default function BasicGrid() {
                                 <PersonIcon />
                             </ListItemIcon>
                             <ListItemText
-                                primary= {`Sexo Masculino | Data de nascimento 24 de Outubro de 1996 | Nacionalidade Cabo-
-                                verdiana`}
+                                primary= {`Sexo Masculino | Data de nascimento 24 de Outubro de 1996 | Nacionalidade 
+                                Cabo-verdiana`}
                             />
                         </ListItem>
 
