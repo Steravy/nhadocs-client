@@ -28,14 +28,24 @@ const Dto = [
         cellPhone: 9352569,
         phone: 9567880,
         email: 'theRock@gmail.com',
-        generalInfo: 'Sexo Masculino | Data de nascimento 24 de Outubro de 1996 | Nacionalidade Havaian'
+        generalInfo: 'Sexo Masculino | Data de nascimento 24 de Outubro de 1996 | Nacionalidade Havaian',
+        location: 'Palmarejo, Praia, Santiago, 7600'
+    },
+
+    {
+        name: 'Matheus Vitoria',
+        cellPhone: 9352569,
+        phone: 9567880,
+        email: 'tiago@gmail.com',
+        generalInfo: 'Sexo Masculino | Data de nascimento 30 de Maio de 2006 | Nacionalidade Capeverdean',
+        location: 'Palmarejo, Praia, Santiago, 7600'
     }
 ]
 
 export default function TemplatePage() {
     return (
         <Box sx={{ flexGrow: 1, p: ' 80px 60px' }}>
-            <Divider textAlign="left" >Informacao pessoal</Divider>
+            <Divider textAlign="left">Informacao pessoal</Divider>
 
             {/* <Grid container spacing={2} sx={{ p: ' 30px 60px' }} >
 
