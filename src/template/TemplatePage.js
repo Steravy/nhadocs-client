@@ -21,12 +21,23 @@ const Location = "Palmarejo, Praia, Santiago, 7600"
 //     color: theme.palette.text.primary,
 // }));
 
+
+const Dto = [
+    {
+        name: 'The Rock',
+        cellPhone: 9352569,
+        phone: 9567880,
+        email: 'theRock@gmail.com',
+        generalInfo: 'Sexo Masculino | Data de nascimento 24 de Outubro de 1996 | Nacionalidade Havaian'
+    }
+]
+
 export default function TemplatePage() {
     return (
         <Box sx={{ flexGrow: 1, p: ' 80px 60px' }}>
             <Divider textAlign="left" >Informacao pessoal</Divider>
 
-            <Grid container spacing={2} sx={{ p: ' 30px 60px' }} >
+            {/* <Grid container spacing={2} sx={{ p: ' 30px 60px' }} >
 
                 <Grid item xs={12} md={3} >
                     <ProfileAvatarComponent />
@@ -44,9 +55,9 @@ export default function TemplatePage() {
                     </Stack>
                 </Grid>
 
-            </Grid>
+            </Grid> */}
 
-            <Divider textAlign="left" > Educacao e Formacao </Divider>
+            {/* <Divider textAlign="left" > Educacao e Formacao </Divider> */}
 
             <Grid container spacing={2} sx={{ p: ' 30px 60px' }} >
 
