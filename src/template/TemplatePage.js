@@ -11,7 +11,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import PersonIcon from '@mui/icons-material/Person';
 
 
-
+const iconList = [<LocationOnIcon />, <PhoneIphoneIcon />, <PhoneEnabledIcon />, <EmailIcon />, <PersonIcon />]
 const Location = "Palmarejo, Praia, Santiago, 7600"
 // const Item = styled(Paper)(({ theme }) => ({
 //     backgroundColor: '#000',
@@ -47,7 +47,7 @@ export default function TemplatePage() {
         <Box sx={{ flexGrow: 1, p: ' 80px 60px' }}>
             <Divider textAlign="left">Informacao pessoal</Divider>
 
-            <Grid container spacing={2} sx={{ p: ' 30px 60px' }} >
+            {/* <Grid container spacing={2} sx={{ p: ' 30px 60px' }} >
 
                 <Grid item xs={12} md={3} >
                     <ProfileAvatarComponent />
@@ -67,7 +67,7 @@ export default function TemplatePage() {
 
             </Grid>
 
-            <Divider textAlign="left" > Educacao e Formacao </Divider>
+            <Divider textAlign="left" > Educacao e Formacao </Divider> */}
 
             <Grid container spacing={2} sx={{ p: ' 30px 60px' }} >
 
@@ -91,7 +91,7 @@ export default function TemplatePage() {
                             />
                         </ListItem >
 
-                        <ListItem sx={{p: 0}} >
+                        {/* <ListItem sx={{p: 0}} >
                             <ListItemIcon>
                                 <PhoneIphoneIcon />
                             </ListItemIcon>
@@ -126,7 +126,7 @@ export default function TemplatePage() {
                                 primary= {`Sexo Masculino | Data de nascimento 24 de Outubro de 1996 | Nacionalidade 
                                 Cabo-verdiana`}
                             />
-                        </ListItem>
+                        </ListItem> */}
 
                     </List>
                 </Grid>
