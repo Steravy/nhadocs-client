@@ -47,7 +47,7 @@ export default function TemplatePage() {
         <Box sx={{ flexGrow: 1, p: ' 80px 60px' }}>
             <Divider textAlign="left">Informacao pessoal</Divider>
 
-            {/* <Grid container spacing={2} sx={{ p: ' 30px 60px' }} >
+            <Grid container spacing={2} sx={{ p: ' 30px 60px' }} >
 
                 <Grid item xs={12} md={3} >
                     <ProfileAvatarComponent />
@@ -65,9 +65,9 @@ export default function TemplatePage() {
                     </Stack>
                 </Grid>
 
-            </Grid> */}
+            </Grid>
 
-            {/* <Divider textAlign="left" > Educacao e Formacao </Divider> */}
+            <Divider textAlign="left" > Educacao e Formacao </Divider>
 
             <Grid container spacing={2} sx={{ p: ' 30px 60px' }} >
 
