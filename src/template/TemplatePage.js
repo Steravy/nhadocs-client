@@ -9,6 +9,7 @@ import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
 import PersonIcon from '@mui/icons-material/Person';
+import { Key } from '@mui/icons-material';
 
 
 const iconList = [<LocationOnIcon />, <PhoneIphoneIcon />, <PhoneEnabledIcon />, <EmailIcon />, <PersonIcon />]
@@ -32,14 +33,14 @@ const Dto = [
         location: 'Palmarejo, Praia, Santiago, 7600'
     },
 
-    {
-        name: 'Matheus Vitoria',
-        cellPhone: 9352569,
-        phone: 9567880,
-        email: 'tiago@gmail.com',
-        generalInfo: 'Sexo Masculino | Data de nascimento 30 de Maio de 2006 | Nacionalidade Capeverdean',
-        location: 'Palmarejo, Praia, Santiago, 7600'
-    }
+    //     {
+    //         name: 'Matheus Vitoria',
+    //         cellPhone: 9352569,
+    //         phone: 9567880,
+    //         email: 'tiago@gmail.com',
+    //         generalInfo: 'Sexo Masculino | Data de nascimento 30 de Maio de 2006 | Nacionalidade Capeverdean',
+    //         location: 'Palmarejo, Praia, Santiago, 7600'
+    //     }
 ]
 
 export default function TemplatePage() {
@@ -47,27 +48,8 @@ export default function TemplatePage() {
         <Box sx={{ flexGrow: 1, p: ' 80px 60px' }}>
             <Divider textAlign="left">Informacao pessoal</Divider>
 
-            {/* <Grid container spacing={2} sx={{ p: ' 30px 60px' }} >
 
-                <Grid item xs={12} md={3} >
-                    <ProfileAvatarComponent />
-                </Grid>
-
-                <Grid item xs={12} md={9} >
-                    <Stack spacing={1}>
-                        <Typography>Stephan Salvatory</Typography>
-                        <Typography>Cabo Verde, Santiago-Praia, Palmarejo, 7600</Typography>
-                        <Typography>+238 9352569</Typography>
-                        <Typography>+238 9567880</Typography>
-                        <Typography>steph.74lw@gmail.com</Typography>
-                        <Typography>Sexo Masculino | Data de nascimento 24 de Outubro de 1996 | Nacionalidade 
-                            Cabo-verdiana</Typography>
-                    </Stack>
-                </Grid>
-
-            </Grid>
-
-            <Divider textAlign="left" > Educacao e Formacao </Divider> */}
+            {/* <Divider textAlign="left" > Educacao e Formacao </Divider>  */}
 
             <Grid container spacing={2} sx={{ p: ' 30px 60px' }} >
 
@@ -77,61 +59,93 @@ export default function TemplatePage() {
 
                 <Grid item xs={12} md={9} >
                     <List spacing={2}>
+                        {
 
-                        <ListItem sx={{p: 0}} >
-                            <Typography>Dwayne Jhonson The Rock</Typography>
-                        </ListItem>
+                            Dto.map((person, i) => {
+                                return <>
+                                    <ListItem sx={{ p: 0 }} >
+                                        <Typography>{person.name}</Typography>
+                                    </ListItem>
 
-                        <ListItem sx={{p: 0}} >
-                            <ListItemIcon>
-                                <LocationOnIcon />
-                            </ListItemIcon>
-                            <ListItemText
-                                primary= {Location}
-                            />
-                        </ListItem >
 
-                        {/* <ListItem sx={{p: 0}} >
-                            <ListItemIcon>
-                                <PhoneIphoneIcon />
-                            </ListItemIcon>
-                            <ListItemText
-                                primary= '+238 9352569'
-                            />
-                        </ListItem>
+                                    <ListItem sx={{ p: 0 }} >
+                                        <ListItemIcon>
+                                            <LocationOnIcon />
+                                        </ListItemIcon>
+                                        <ListItemText
+                                            primary={person.location}
+                                        />
+                                    </ListItem >
 
-                        <ListItem sx={{p: 0}} >
-                            <ListItemIcon>
-                                <PhoneEnabledIcon />
-                            </ListItemIcon>
-                            <ListItemText
-                                primary= '+238 9352569'
-                            />
-                        </ListItem>
+                                    <ListItem sx={{ p: 0 }} >
+                                        <ListItemIcon>
+                                            <PhoneIphoneIcon />
+                                        </ListItemIcon>
+                                        <ListItemText
+                                            primary={person.phone}
+                                        />
+                                    </ListItem>
 
-                        <ListItem sx={{p: 0}} >
-                            <ListItemIcon>
-                                <EmailIcon />
-                            </ListItemIcon>
-                            <ListItemText
-                                primary= 'therock@gmail.com'
-                            />
-                        </ListItem>
+                                    <ListItem sx={{ p: 0 }} >
+                                        <ListItemIcon>
+                                            <PhoneEnabledIcon />
+                                        </ListItemIcon>
+                                        <ListItemText
+                                            primary={person.cellPhone}
+                                        />
+                                    </ListItem>
 
-                        <ListItem sx={{p: 0}} >
-                            <ListItemIcon>
-                                <PersonIcon />
-                            </ListItemIcon>
-                            <ListItemText
-                                primary= {`Sexo Masculino | Data de nascimento 24 de Outubro de 1996 | Nacionalidade 
-                                Cabo-verdiana`}
-                            />
-                        </ListItem> */}
+                                    <ListItem sx={{ p: 0 }} >
+                                        <ListItemIcon>
+                                            <EmailIcon />
+                                        </ListItemIcon>
+                                        <ListItemText
+                                            primary={person.email}
+                                        />
+                                    </ListItem>
+
+                                    <ListItem sx={{ p: 0 }} >
+                                        <ListItemIcon>
+                                            <PersonIcon />
+                                        </ListItemIcon>
+                                        <ListItemText
+                                            primary={person.generalInfo}
+                                        />
+                                    </ListItem>
+
+                                </>
+                            })
+                        }
 
                     </List>
                 </Grid>
 
             </Grid>
+
+            <Divider textAlign="left" > Educacao e Formacao </Divider>
+
+            <Grid container spacing={2} sx={{ p: ' 30px 60px' }}>
+                <Grid item xs={12} md={3} >
+                    <Stack spacing={2}>
+
+                        <Typography>{'25/10/2020'} a {'25/10/2022'}</Typography>
+
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={9} >
+                    <Stack spacing={0}>
+
+                        <Typography>{'nhaDocs.com'}</Typography>
+                        <Typography> {'Junior FullStack Developer'} </Typography>
+                        <Typography> {'This'} </Typography>
+
+                    </Stack>
+                    <Divider />
+
+                </Grid>
+            </Grid>
+
         </Box>
     );
 }
