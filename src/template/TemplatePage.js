@@ -282,7 +282,7 @@ export default function TemplatePage() {
                 <Grid container item xs={12} md={3} direction="row" justifyContent="center" alignItems="center">
                     <Stack spacing={2}>
 
-                        <Typography>{'Lingua materna'}</Typography>
+                        <Typography>{'Outras Linguas'}</Typography>
 
                     </Stack>
                 </Grid>
