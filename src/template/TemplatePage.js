@@ -403,7 +403,7 @@ export default function TemplatePage() {
                 </Grid>
             </Grid>
 
-            <Grid container spacing={2} sx={{ p: '6px 30px 30px 30px' }}>
+            <Grid container spacing={2} sx={{ p: '6px 30px 6px 30px' }}>
                 <Grid container item xs={12} md={3} direction="row" justifyContent="center">
                     <Stack spacing={2}>
 
