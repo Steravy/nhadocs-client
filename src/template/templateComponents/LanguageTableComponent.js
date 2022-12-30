@@ -39,7 +39,7 @@ export default function LanguageTableComponent() {
                             <TableCell align="center">Leitura</TableCell>
                             <TableCell align="center">Interacção oral</TableCell>
                             <TableCell align="center">Produção oral</TableCell>
-                            <TableCell align="center">Produção oral</TableCell>
+                            <TableCell align="center">Escrita</TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
@@ -61,7 +61,13 @@ export default function LanguageTableComponent() {
                     </TableBody>
                 </Table>
             </TableContainer>
-            <Box sx={{m: '15px 0'}} >
+
+            <Box sx={{ mt: '8px' }}  >
+                <Typography>
+                    Níveis: A1/A2: utilizador básico | B1/B2 utilizador independente | C1/C2: utilizador avançado
+                </Typography>
+            </Box>
+            <Box sx={{ m: '0 0 15px 0' }} >
                 <Link href="https://europa.eu/europass/pt/common-european-framework-reference-language-skills" target="_blank" rel="noopener">
                     Quadro Europeu Comum de Referência para as Línguas
                 </Link>

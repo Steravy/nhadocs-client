@@ -40,7 +40,7 @@ const Dto = [
 export default function TemplatePage() {
     return (
         <Box sx={{ flexGrow: 1, p: ' 80px 60px', justifyContent: 'center', alignItems: 'center' }} >
-            <Divider textAlign="left"sx={{mb: '20px'}}  >INFORMAÇÃO PESSOAL</Divider>
+            <Divider textAlign="left" sx={{ mb: '20px' }}  >INFORMAÇÃO PESSOAL</Divider>
 
 
             {/* <Divider textAlign="left" > Educacao e Formacao </Divider>  */}
@@ -118,7 +118,7 @@ export default function TemplatePage() {
 
             {/* <Divider /> */}
 
-            <Grid container spacing={2} sx={{ p: '40px 30px 30px 30px'  }}>
+            <Grid container spacing={2} sx={{ p: '40px 30px 30px 30px' }}>
                 <Grid container item xs={12} md={3} direction="row" justifyContent="center" alignItems="center">
                     <Stack spacing={2}>
 
@@ -139,30 +139,8 @@ export default function TemplatePage() {
             </Grid>
 
 
-            <Divider textAlign="left" sx={{m: '20px 0'}}> EXPERIÊNCIA PROFISSIONAL </Divider>
+            <Divider textAlign="left" sx={{ m: '20px 0' }}> EXPERIÊNCIA PROFISSIONAL </Divider>
 
-
-            <Grid container spacing={2} sx={{ p: '6px  30px'  }}>
-                <Grid item xs={12} md={3} >
-                    <Stack spacing={2}>
-
-                        <Typography>{'25/10/2020'} a {'25/10/2022'}</Typography>
-
-                    </Stack>
-                </Grid>
-
-                <Grid item xs={12} md={9} >
-                    <Stack spacing={0}>
-
-                        <Typography>{'nhaDocs.com'}</Typography>
-                        <Typography> {'Junior FullStack Developer'} </Typography>
-                        <Typography> {'This'} </Typography>
-
-                    </Stack>
-                    <Divider />
-
-                </Grid>
-            </Grid>
 
             <Grid container spacing={2} sx={{ p: '6px  30px' }}>
                 <Grid item xs={12} md={3} >
@@ -208,8 +186,30 @@ export default function TemplatePage() {
                 </Grid>
             </Grid>
 
+            <Grid container spacing={2} sx={{ p: '6px  30px' }}>
+                <Grid item xs={12} md={3} >
+                    <Stack spacing={2}>
 
-            <Divider textAlign="left" sx={{m: '20px 0'}}> EDUCAÇÃO E FORMAÇÃO </Divider>
+                        <Typography>{'25/10/2020'} a {'25/10/2022'}</Typography>
+
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={9} >
+                    <Stack spacing={0}>
+
+                        <Typography>{'nhaDocs.com'}</Typography>
+                        <Typography> {'Junior FullStack Developer'} </Typography>
+                        <Typography> {'This'} </Typography>
+
+                    </Stack>
+                    <Divider />
+
+                </Grid>
+            </Grid>
+
+
+            <Divider textAlign="left" sx={{ m: '20px 0' }}> EDUCAÇÃO E FORMAÇÃO </Divider>
 
             <Grid container spacing={2} sx={{ p: '6px  30px' }}>
                 <Grid item xs={12} md={3} >
@@ -256,7 +256,7 @@ export default function TemplatePage() {
             </Grid>
 
 
-            <Divider textAlign="left" sx={{m: '20px 0'}}> COMPETÊNCIAS PESSOAIS </Divider>
+            <Divider textAlign="left" sx={{ m: '20px 0' }}> COMPETÊNCIAS PESSOAIS </Divider>
 
             <Grid container spacing={2} sx={{ p: '6px 30px 30px 30px' }}>
                 <Grid container item xs={12} md={3} direction="row" justifyContent="center" alignItems="center">
@@ -279,8 +279,8 @@ export default function TemplatePage() {
                 </Grid>
             </Grid>
 
-            <Grid container spacing={2} sx={{ p: '6px 30px'  }}>
-                <Grid container item xs={12} md={3} direction="row" justifyContent="center" alignItems="center">
+            <Grid container spacing={2} sx={{ p: '6px 30px' }}>
+                <Grid container item xs={12} md={3} direction="row" justifyContent="center" >
                     <Stack spacing={2}>
 
                         <Typography>{'Outras Linguas'}</Typography>
@@ -292,13 +292,115 @@ export default function TemplatePage() {
 
                     <Stack spacing={0}>
 
-                        <LanguageTableComponent /> 
+                        <LanguageTableComponent />
 
                     </Stack>
 
                 </Grid>
             </Grid>
 
+            {/* Competencias de comunicacao section */}
+
+            <Grid container spacing={2} sx={{ p: '6px 30px 30px 30px' }}>
+                <Grid container item xs={12} md={3} direction="row" justifyContent="center">
+                    <Stack spacing={2}>
+
+                        <Typography>{'Competências de comunicação'}</Typography>
+
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={9} >
+
+                    <Stack spacing={0}>
+
+                        <Typography>{`Excelente capacidade de comunicação adquirida através da experiência profissional
+                        enquanto responsável de venda, formações extracurriculares e através de unidades
+                        curriculares lecionadas a fim de estabelecer contato com o utente nos diferentes
+                        contextos e nas diferentes formas de comunicação.`}
+                        </Typography>
+
+                    </Stack>
+                    <Divider />
+
+                </Grid>
+            </Grid>
+
+
+            {/* Competencias de Organizacao section */}
+
+            <Grid container spacing={2} sx={{ p: '6px 30px 30px 30px' }}>
+                <Grid container item xs={12} md={3} direction="row" justifyContent="center">
+                    <Stack spacing={2}>
+
+                        <Typography>{'Competências de Organização'}</Typography>
+
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={9} >
+
+                    <Stack spacing={0}>
+
+                        <Typography>{`Excelente capacidade de comunicação adquirida através da experiência profissional
+                        enquanto responsável de venda, formações extracurriculares e através de unidades
+                        curriculares lecionadas a fim de estabelecer contato com o utente nos diferentes
+                        contextos e nas diferentes formas de comunicação.`}
+                        </Typography>
+
+                    </Stack>
+                    <Divider />
+
+                </Grid>
+            </Grid>
+
+            {/* Competencias relacionadas com o trabalho section */}
+
+            <Grid container spacing={2} sx={{ p: '6px 30px 30px 30px' }}>
+                <Grid container item xs={12} md={3} direction="row" justifyContent="center">
+                    <Stack spacing={2}>
+
+                        <Typography>{'Competências relacionadas com o trabalho'}</Typography>
+
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={9} >
+
+                    <Stack spacing={0}>
+
+                        <Typography>
+                            {
+                                `Excelente capacidade de comunicação adquirida através da experiência profissional
+                                enquanto responsável de venda, formações extracurriculares e através de unidades
+                                curriculares lecionadas a fim de estabelecer contato com o utente nos diferentes
+                                contextos e nas diferentes formas de comunicação.
+                            `}
+                        </Typography>
+
+                        <Typography>
+                            {
+                                `Excelente capacidade de comunicação adquirida através da experiência profissional
+                                enquanto responsável de venda, formações extracurriculares e através de unidades
+                                curriculares lecionadas a fim de estabelecer contato com o utente nos diferentes
+                                contextos e nas diferentes formas de comunicação.
+                            `}
+                        </Typography>
+
+                        <Typography>
+                            {
+                                `Excelente capacidade de comunicação adquirida através da experiência profissional
+                                enquanto responsável de venda, formações extracurriculares e através de unidades
+                                curriculares lecionadas a fim de estabelecer contato com o utente nos diferentes
+                                contextos e nas diferentes formas de comunicação.
+                            `}
+                        </Typography>
+
+                    </Stack>
+                    <Divider />
+
+                </Grid>
+            </Grid>
         </Box>
     );
 }
