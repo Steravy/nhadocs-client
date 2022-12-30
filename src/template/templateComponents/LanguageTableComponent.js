@@ -68,7 +68,8 @@ export default function LanguageTableComponent() {
                 </Typography>
             </Box>
             <Box sx={{ m: '0 0 15px 0' }} >
-                <Link href="https://europa.eu/europass/pt/common-european-framework-reference-language-skills" target="_blank" rel="noopener">
+                <Link href="https://europa.eu/europass/pt/common-european-framework-reference-language-skills"
+                    target="_blank" rel="noopener">
                     Quadro Europeu Comum de Referência para as Línguas
                 </Link>
             </Box>
