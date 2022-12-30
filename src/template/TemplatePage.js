@@ -503,6 +503,26 @@ export default function TemplatePage() {
                 </Grid>
             </Grid>
 
+            <Divider textAlign="left" sx={{ m: '20px 0' }}> ANEXOS </Divider>
+            
+            {/* Anexos */}
+
+            <Grid container spacing={2} sx={{ p: '6px 30px 30px 30px' }} direction="row" justifyContent="center" alignItems='center'>
+
+                <Grid container item xs={12} md={9} direction="row" justifyContent="center" alignItems='center' >
+
+                    <Stack spacing={0}>
+
+                        <Typography>{'Cópia dos diplomas e certificados mencionados'}</Typography>
+                        <Typography>{'Cópia do cartão nacional de identificação'}</Typography>
+                        <Typography>{'Cópia do cartão nacional de identificação'}</Typography>
+
+                    </Stack>
+
+                </Grid>
+            </Grid>
+
+
         </Box>
     );
 }
