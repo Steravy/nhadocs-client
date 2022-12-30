@@ -36,8 +36,6 @@ export default function LanguageTableComponent() {
             <TableCell>Produção oral</TableCell>
             <TableCell>Produção oral</TableCell>
             <TableCell>Produção oral</TableCell>
-
-            
           </TableRow>
         </TableHead>
         <TableBody>
