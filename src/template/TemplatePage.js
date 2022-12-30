@@ -419,7 +419,7 @@ export default function TemplatePage() {
                         <Typography>{'Bloging'}</Typography>
                         <Typography>{'Write Poem'}</Typography>
                         <Typography>{'Play Guitar'}</Typography>
-                        
+
                     </Stack>
                     <Divider />
 
@@ -428,7 +428,80 @@ export default function TemplatePage() {
 
             <Divider textAlign="left" sx={{ m: '20px 0' }}> INFORMAÇÃO ADICIONAL </Divider>
 
+            {/* Seminarios */}
 
+            <Grid container spacing={2} sx={{ p: '6px 30px 30px 30px' }}>
+                <Grid container item xs={12} md={3} direction="row" justifyContent="center">
+                    <Stack spacing={2}>
+
+                        <Typography>{'Seminários'}</Typography>
+
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={9} >
+
+                    <Stack spacing={0}>
+
+                        <Typography>{'Bloging'}</Typography>
+                        <Typography>{'Write Poem'}</Typography>
+                        <Typography>{'Play Guitar'}</Typography>
+
+                    </Stack>
+                    <Divider />
+
+                </Grid>
+            </Grid>
+
+            {/* Conferencias */}
+
+            <Grid container spacing={2} sx={{ p: '6px 30px 30px 30px' }}>
+                <Grid container item xs={12} md={3} direction="row" justifyContent="center">
+                    <Stack spacing={2}>
+
+                        <Typography>{'Conferências'}</Typography>
+
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={9} >
+
+                    <Stack spacing={0}>
+
+                        <Typography>{'Bloging'}</Typography>
+                        <Typography>{'Write Poem'}</Typography>
+                        <Typography>{'Play Guitar'}</Typography>
+
+                    </Stack>
+                    <Divider />
+
+                </Grid>
+            </Grid>
+
+            {/* Certificações */}
+
+            <Grid container spacing={2} sx={{ p: '6px 30px 30px 30px' }}>
+                <Grid container item xs={12} md={3} direction="row" justifyContent="center">
+                    <Stack spacing={2}>
+
+                        <Typography>{'Certificações'}</Typography>
+
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={9} >
+
+                    <Stack spacing={0}>
+
+                        <Typography>{'Bloging'}</Typography>
+                        <Typography>{'Write Poem'}</Typography>
+                        <Typography>{'Play Guitar'}</Typography>
+
+                    </Stack>
+                    <Divider />
+
+                </Grid>
+            </Grid>
 
         </Box>
     );
