@@ -9,7 +9,7 @@ import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
 import PersonIcon from '@mui/icons-material/Person';
-import { Key } from '@mui/icons-material';
+import LanguageTableComponent from './templateComponents/LanguageTableComponent';
 
 
 const iconList = [<LocationOnIcon />, <PhoneIphoneIcon />, <PhoneEnabledIcon />, <EmailIcon />, <PersonIcon />]
@@ -291,7 +291,7 @@ export default function TemplatePage() {
 
                     <Stack spacing={0}>
 
-                        <Typography>{'Crioulo'}</Typography>
+                        <LanguageTableComponent /> 
 
                     </Stack>
 
