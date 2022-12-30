@@ -11,13 +11,12 @@ import Link from '@mui/material/Link';
 import { Box } from '@mui/material';
 
 
-function createData(processamentoDeInformação, compreensãoOral, leitura, interacçãoOral, produçãoOral, escrita) {
-    return { lingua, compreensãoOral, leitura, interacçãoOral, produçãoOral, escrita };
+function createData(processamentoDeInformação, comunicação, criaçãoDeConteudos, segurança, resoluçãoDeProblemas) {
+    return { processamentoDeInformação, comunicação, criaçãoDeConteudos, segurança, resoluçãoDeProblemas };
 }
 
 const rows = [
-    createData('Português', 'C2', 'C1', 'C1', 'C1', 'C2'),
-    createData('Inglês', 'C1', 'C1', 'C1', 'C1', 'C2'),
+    createData('Utilizador independente', 'Utilizador independente', 'Utilizador independente', 'Utilizador independente', 'Utilizador independente')
 
 ];
 
@@ -45,12 +44,12 @@ export default function DigitalSkillsTableComponent() {
                                 sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
                             >
                                 <TableCell align='center' component="th" scope="row">
-                                    {row.lingua}
+                                    {row.processamentoDeInformação}
                                 </TableCell>
-                                <TableCell align="center">{row.compreensãoOral}</TableCell>
-                                <TableCell align="center">{row.leitura}</TableCell>
-                                <TableCell align="center">{row.interacçãoOral}</TableCell>
-                                <TableCell align="center">{row.produçãoOral}</TableCell>
+                                <TableCell align="center">{row.comunicação}</TableCell>
+                                <TableCell align="center">{row.criaçãoDeConteudos}</TableCell>
+                                <TableCell align="center">{row.segurança}</TableCell>
+                                <TableCell align="center">{row.resoluçãoDeProblemas}</TableCell>
                             </TableRow>
                         ))}
                     </TableBody>
