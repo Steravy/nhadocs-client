@@ -8,7 +8,7 @@ import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import { Typography } from '@mui/material';
 import Link from '@mui/material/Link';
-import { Box } from '@mui/system';
+import { Box } from '@mui/material';
 
 
 function createData(lingua, compreensãoOral, leitura, interacçãoOral, produçãoOral, escrita) {
