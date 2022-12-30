@@ -10,6 +10,7 @@ import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
 import PersonIcon from '@mui/icons-material/Person';
 import LanguageTableComponent from './templateComponents/LanguageTableComponent';
+import DigitalSkillsTableComponent from './templateComponents/DigitalSkillsTableComponent';
 
 
 const iconList = [<LocationOnIcon />, <PhoneIphoneIcon />, <PhoneEnabledIcon />, <EmailIcon />, <PersonIcon />]
@@ -366,20 +367,38 @@ export default function TemplatePage() {
                 </Grid>
 
                 <Grid item xs={12} md={9} >
+                    <Stack spacing={0}>
 
+                        <Typography>{`Excelente capacidade de comunicação adquirida através da experiência profissional
+                            enquanto responsável de venda, formações extracurriculares e através de unidades
+                            curriculares lecionadas a fim de estabelecer contato com o utente nos diferentes
+                            contextos e nas diferentes formas de comunicação.`}
+                        </Typography>
 
-                        <List spacing={2} sx={{m: '0'}}>
-                                <ListItem sx={{ m: 0 }}>
-                                    <ListItemText
-                                    sx={{m: '0'}}
-                                        primary="Single-line item"
-                                        secondary='tested'
-                                    />
-                                </ListItem>
-                        
-                        </List>
-
+                    </Stack>
                     <Divider />
+
+                </Grid>
+            </Grid>
+
+            {/* Competencias digitais */}
+
+            <Grid container spacing={2} sx={{ p: '6px 30px' }}>
+                <Grid container item xs={12} md={3} direction="row" justifyContent="center" >
+                    <Stack spacing={2}>
+
+                        <Typography>{'Competências digitais'}</Typography>
+
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={9} >
+
+                    <Stack spacing={0}>
+
+                        <DigitalSkillsTableComponent />
+
+                    </Stack>
 
                 </Grid>
             </Grid>
