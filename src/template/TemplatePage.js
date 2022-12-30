@@ -367,36 +367,18 @@ export default function TemplatePage() {
 
                 <Grid item xs={12} md={9} >
 
-                    <Stack spacing={0}>
 
-                        <Typography>
-                            {
-                                `Excelente capacidade de comunicação adquirida através da experiência profissional
-                                enquanto responsável de venda, formações extracurriculares e através de unidades
-                                curriculares lecionadas a fim de estabelecer contato com o utente nos diferentes
-                                contextos e nas diferentes formas de comunicação.
-                            `}
-                        </Typography>
+                        <List spacing={2} sx={{m: '0'}}>
+                                <ListItem sx={{ m: 0 }}>
+                                    <ListItemText
+                                    sx={{m: '0'}}
+                                        primary="Single-line item"
+                                        secondary='tested'
+                                    />
+                                </ListItem>
+                        
+                        </List>
 
-                        <Typography>
-                            {
-                                `Excelente capacidade de comunicação adquirida através da experiência profissional
-                                enquanto responsável de venda, formações extracurriculares e através de unidades
-                                curriculares lecionadas a fim de estabelecer contato com o utente nos diferentes
-                                contextos e nas diferentes formas de comunicação.
-                            `}
-                        </Typography>
-
-                        <Typography>
-                            {
-                                `Excelente capacidade de comunicação adquirida através da experiência profissional
-                                enquanto responsável de venda, formações extracurriculares e através de unidades
-                                curriculares lecionadas a fim de estabelecer contato com o utente nos diferentes
-                                contextos e nas diferentes formas de comunicação.
-                            `}
-                        </Typography>
-
-                    </Stack>
                     <Divider />
 
                 </Grid>
