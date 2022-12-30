@@ -14,13 +14,7 @@ import { Key } from '@mui/icons-material';
 
 const iconList = [<LocationOnIcon />, <PhoneIphoneIcon />, <PhoneEnabledIcon />, <EmailIcon />, <PersonIcon />]
 const Location = "Palmarejo, Praia, Santiago, 7600"
-// const Item = styled(Paper)(({ theme }) => ({
-//     backgroundColor: '#000',
-//     ...theme.typography.body2,
-//     padding: theme.spacing(1),
-//     textAlign: 'center',
-//     color: theme.palette.text.primary,
-// }));
+
 
 
 const Dto = [
@@ -45,15 +39,15 @@ const Dto = [
 
 export default function TemplatePage() {
     return (
-        <Box sx={{ flexGrow: 1, p: ' 80px 60px' }}>
-            <Divider textAlign="left">Informacao pessoal</Divider>
+        <Box sx={{ flexGrow: 1, p: ' 80px 60px', justifyContent: 'center', alignItems: 'center' }} >
+            <Divider textAlign="left"sx={{mb: '20px'}}  >INFORMAÇÃO PESSOAL</Divider>
 
 
             {/* <Divider textAlign="left" > Educacao e Formacao </Divider>  */}
 
-            <Grid container spacing={2} sx={{ p: ' 30px 60px' }} >
+            <Grid container spacing={2} sx={{ p: '10px  30px' }} direction="row" justifyContent="center" alignItems="center">
 
-                <Grid item xs={12} md={3} >
+                <Grid container item xs={12} md={3} direction="row" justifyContent="center" alignItems="center">
                     <ProfileAvatarComponent />
                 </Grid>
 
@@ -122,9 +116,33 @@ export default function TemplatePage() {
 
             </Grid>
 
-            <Divider textAlign="left" > Educacao e Formacao </Divider>
+            {/* <Divider /> */}
 
-            <Grid container spacing={2} sx={{ p: ' 30px 60px' }}>
+            <Grid container spacing={2} sx={{ p: '40px 30px 30px 30px'  }}>
+                <Grid container item xs={12} md={3} direction="row" justifyContent="center" alignItems="center">
+                    <Stack spacing={2}>
+
+                        <Typography>{'Cargo a que se candidata'}</Typography>
+
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={9} >
+
+                    <Stack spacing={0}>
+
+                        <Typography>{'JavaScript FullStack Developer'}</Typography>
+
+                    </Stack>
+
+                </Grid>
+            </Grid>
+
+
+            <Divider textAlign="left" sx={{m: '20px 0'}}> EXPERIÊNCIA PROFISSIONAL </Divider>
+
+
+            <Grid container spacing={2} sx={{ p: '6px  30px'  }}>
                 <Grid item xs={12} md={3} >
                     <Stack spacing={2}>
 
@@ -145,6 +163,100 @@ export default function TemplatePage() {
 
                 </Grid>
             </Grid>
+
+            <Grid container spacing={2} sx={{ p: '6px  30px' }}>
+                <Grid item xs={12} md={3} >
+                    <Stack spacing={2}>
+
+                        <Typography>{'25/10/2020'} a {'25/10/2022'}</Typography>
+
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={9} >
+                    <Stack spacing={0}>
+
+                        <Typography>{'nhaDocs.com'}</Typography>
+                        <Typography> {'Junior FullStack Developer'} </Typography>
+                        <Typography> {'This'} </Typography>
+
+                    </Stack>
+                    <Divider />
+
+                </Grid>
+            </Grid>
+
+            <Grid container spacing={2} sx={{ p: '6px  30px' }}>
+                <Grid item xs={12} md={3} >
+                    <Stack spacing={2}>
+
+                        <Typography>{'25/10/2020'} a {'25/10/2022'}</Typography>
+
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={9} >
+                    <Stack spacing={0}>
+
+                        <Typography>{'nhaDocs.com'}</Typography>
+                        <Typography> {'Junior FullStack Developer'} </Typography>
+                        <Typography> {'This'} </Typography>
+
+                    </Stack>
+                    <Divider />
+
+                </Grid>
+            </Grid>
+
+
+            <Divider textAlign="left" sx={{m: '20px 0'}}> EDUCAÇÃO E FORMAÇÃO </Divider>
+
+            <Grid container spacing={2} sx={{ p: '6px  30px' }}>
+                <Grid item xs={12} md={3} >
+                    <Stack spacing={2}>
+
+                        <Typography>{'25/10/2020'} a {'25/10/2022'}</Typography>
+
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={9} >
+                    <Stack spacing={0}>
+
+                        <Typography>{'Ensino Secundario'}</Typography>
+                        <Typography> {'Escola Secundaria do Tarrafal'} </Typography>
+                        <Typography> {'Ponta D`Atum - Cidade do Tarrafal'} </Typography>
+
+                    </Stack>
+                    <Divider />
+
+                </Grid>
+            </Grid>
+
+            <Grid container spacing={2} sx={{ p: '6px  30px' }}>
+                <Grid item xs={12} md={3} >
+                    <Stack spacing={2}>
+
+                        <Typography>{'25/10/2020'} a {'25/10/2022'}</Typography>
+
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={9} >
+                    <Stack spacing={0}>
+
+                        <Typography>{'Ensino Secundario'}</Typography>
+                        <Typography> {'Escola Secundaria do Tarrafal'} </Typography>
+                        <Typography> {'Ponta D`Atum - Cidade do Tarrafal'} </Typography>
+
+                    </Stack>
+                    <Divider />
+
+                </Grid>
+            </Grid>
+
+
+            <Divider textAlign="left" sx={{m: '20px 0'}}> COMPETÊNCIAS PESSOAIS </Divider>
 
         </Box>
     );
