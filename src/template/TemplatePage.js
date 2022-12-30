@@ -258,6 +258,46 @@ export default function TemplatePage() {
 
             <Divider textAlign="left" sx={{m: '20px 0'}}> COMPETÊNCIAS PESSOAIS </Divider>
 
+            <Grid container spacing={2} sx={{ p: '6px 30px'  }}>
+                <Grid container item xs={12} md={3} direction="row" justifyContent="center" alignItems="center">
+                    <Stack spacing={2}>
+
+                        <Typography>{'Lingua materna'}</Typography>
+
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={9} >
+
+                    <Stack spacing={0}>
+
+                        <Typography>{'Crioulo'}</Typography>
+
+                    </Stack>
+
+                </Grid>
+            </Grid>
+
+            <Grid container spacing={2} sx={{ p: '6px 30px'  }}>
+                <Grid container item xs={12} md={3} direction="row" justifyContent="center" alignItems="center">
+                    <Stack spacing={2}>
+
+                        <Typography>{'Lingua materna'}</Typography>
+
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={9} >
+
+                    <Stack spacing={0}>
+
+                        <Typography>{'Crioulo'}</Typography>
+
+                    </Stack>
+
+                </Grid>
+            </Grid>
+
         </Box>
     );
 }
