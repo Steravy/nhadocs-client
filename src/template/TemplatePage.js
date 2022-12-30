@@ -402,6 +402,34 @@ export default function TemplatePage() {
 
                 </Grid>
             </Grid>
+
+            <Grid container spacing={2} sx={{ p: '6px 30px 30px 30px' }}>
+                <Grid container item xs={12} md={3} direction="row" justifyContent="center">
+                    <Stack spacing={2}>
+
+                        <Typography>{'Outras Competências'}</Typography>
+
+                    </Stack>
+                </Grid>
+
+                <Grid item xs={12} md={9} >
+
+                    <Stack spacing={0}>
+
+                        <Typography>{'Bloging'}</Typography>
+                        <Typography>{'Write Poem'}</Typography>
+                        <Typography>{'Play Guitar'}</Typography>
+                        
+                    </Stack>
+                    <Divider />
+
+                </Grid>
+            </Grid>
+
+            <Divider textAlign="left" sx={{ m: '20px 0' }}> INFORMAÇÃO ADICIONAL </Divider>
+
+
+
         </Box>
     );
 }
