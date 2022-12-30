@@ -258,7 +258,7 @@ export default function TemplatePage() {
 
             <Divider textAlign="left" sx={{m: '20px 0'}}> COMPETÊNCIAS PESSOAIS </Divider>
 
-            <Grid container spacing={2} sx={{ p: '6px 30px'  }}>
+            <Grid container spacing={2} sx={{ p: '6px 30px 30px 30px' }}>
                 <Grid container item xs={12} md={3} direction="row" justifyContent="center" alignItems="center">
                     <Stack spacing={2}>
 
@@ -274,6 +274,7 @@ export default function TemplatePage() {
                         <Typography>{'Crioulo'}</Typography>
 
                     </Stack>
+                    <Divider />
 
                 </Grid>
             </Grid>
