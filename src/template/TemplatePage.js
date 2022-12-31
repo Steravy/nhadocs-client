@@ -516,6 +516,8 @@ export default function TemplatePage() {
                         <Typography>{'Cópia dos diplomas e certificados mencionados'}</Typography>
                         <Typography>{'Cópia do cartão nacional de identificação'}</Typography>
                         <Typography>{'Cópia do cartão nacional de identificação'}</Typography>
+                        <p>Cópia do cartão nacional de identificação</p>
+
 
                     </Stack>
 
