@@ -2,10 +2,12 @@ import { Link } from "@mui/material";
 
 export default function Home() {
 
-    return <>
+    return (
+        <>
 
-        <Link href="/template">Home Page</Link>
+            <Link href="/template">Home Page</Link>
 
-    </>
+        </>
+    );
 
 }
