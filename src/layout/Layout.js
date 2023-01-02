@@ -1,6 +1,5 @@
 import { Paper } from "@mui/material";
 import { Outlet } from "react-router-dom";
-import SideBarComponent from "../../components/side-bar/sideBarComponent";
 import './Layout.css';
 
 
@@ -11,7 +10,7 @@ export default function Layout() {
         {/* We must have a top bar here */}
 
         <div className='midle-section'>
-        
+        <p></p>
 
             <SideBarComponent/>
 
