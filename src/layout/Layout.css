@@ -14,10 +14,6 @@ aside {
     border-right: 1px solid #ccc
 }
 
-.Pdiv {
-    background-color: blue;
-    height: 100%;
-}
 
 .content{
     width: 100%;
@@ -34,9 +30,7 @@ aside {
 }
 
 footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    
     border: 1px solid #ccc;
     padding: 20px 40px
 }

@@ -11,9 +11,7 @@ export default function Layout() {
 
         <div className='midle-section'>
 
-            <div className="Pdiv">
-                <p  >another one</p>
-            </div>
+            
             <div className="content">
                 <Paper sx= {{
                     padding: 2
