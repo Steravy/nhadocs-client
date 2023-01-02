@@ -19,7 +19,6 @@ export default function Layout() {
                 }}> 
                     <Outlet /> 
                 </Paper>
-                {/* <DepartmentListing/> */}
             </div>
 
         </div>
