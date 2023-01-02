@@ -20,13 +20,14 @@ aside {
     background-color: #eee;
 }
 
-.midle-section .content {
+/* .midle-section .content {
     padding: 90px 60px
-}
+} */
 
 .midle-section {
     display: flex;
     gap: 20px;
+    width: 100%;
 }
 
 footer {

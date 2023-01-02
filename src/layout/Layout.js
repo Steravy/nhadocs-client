@@ -9,7 +9,7 @@ export default function Layout() {
     return <>
 
         {/* We must have a top bar here */}
-        <HeaderComponent/>
+        {/* <HeaderComponent/> */}
 
 
         <div className='midle-section'>
