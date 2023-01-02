@@ -10,9 +10,8 @@ export default function Layout() {
         {/* We must have a top bar here */}
 
         <div className='midle-section'>
-        <p></p>
 
-            <SideBarComponent/>
+            {/* <SideBarComponent/> */}
 
             <div className="content">
                 <Paper sx= {{

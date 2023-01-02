@@ -1,13 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './home/Home';
 import './index.css';
+import Layout from './layout/Layout';
 import reportWebVitals from './reportWebVitals';
 import CvTemplatePage from './template/TemplatePage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <CvTemplatePage />
+
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+
+          <Route path="/template" element={<CvTemplatePage />}/>
+
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
