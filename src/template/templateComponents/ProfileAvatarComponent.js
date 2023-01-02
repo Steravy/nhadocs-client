@@ -6,7 +6,7 @@ import theRock from './theRock.jpg'
 
 export default function ProfileAvatarComponent(props) {
   return (
-    <Stack direction="row" spacing={2}>
+    <Stack direction="row" spacing={2} >
       <Avatar alt="Profile Picture" src={theRock} sx={{height: '200px', width: '200px'}} />
     </Stack>
   );
