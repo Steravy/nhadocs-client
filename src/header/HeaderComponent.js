@@ -47,8 +47,8 @@ export default function HideAppBar(props) {
           </Toolbar>
         </AppBar>
       </HideOnScroll>
-      <Toolbar />
-      <Container>
+      {/* <Toolbar /> */}
+      {/* <Container>
         <Box sx={{ my: 2 }}>
           {[...new Array(12)]
             .map(
@@ -59,7 +59,7 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
             )
             .join('\n')}
         </Box>
-      </Container>
+      </Container> */}
     </React.Fragment>
   );
 }

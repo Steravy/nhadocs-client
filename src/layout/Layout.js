@@ -9,17 +9,14 @@ export default function Layout() {
     return <>
 
         {/* We must have a top bar here */}
-        <HeaderComponent/>
+        <HeaderComponent />
 
 
         <div className='midle-section'>
 
             <div className="content">
-                <Paper sx= {{
-                    padding: 2
-                }}> 
-                    <Outlet /> 
-                </Paper>
+
+                <Outlet />
             </div>
 
         </div>

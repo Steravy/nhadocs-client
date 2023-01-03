@@ -17,22 +17,27 @@ aside {
 
 .content{
     width: 100%;
-    background-color: #eee;
+    /* background-color: #eee; */
+    background-color: rgba(246, 246, 244, 1);
+
 }
 
-/* .midle-section .content {
+.midle-section .content {
     padding: 90px 60px
-} */
+}
 
 .midle-section {
     display: flex;
     gap: 20px;
     width: 100%;
+    background-color: rgba(246, 246, 244, 1);
 }
 
 footer {
     
     border: 1px solid #ccc;
-    padding: 20px 40px
+    padding: 20px 40px;
+    background-color: rgba(246, 246, 244, 1);
+
     
 }
