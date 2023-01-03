@@ -6,22 +6,24 @@ import './Layout.css';
 
 export default function Layout() {
 
-    return <>
+    return (
+        <div className="wrapper">
 
-        {/* We must have a top bar here */}
-        <HeaderComponent />
+            {/* We must have a top bar here */}
+            <HeaderComponent />
 
 
-        <div className='midle-section'>
+            <div className='midle-section'>
 
-            <div className="content">
+                <div className="content">
 
-                <Outlet />
+                    <Outlet />
+                </div>
+
             </div>
 
+            <footer>Some footer</footer>
         </div>
-
-        <footer>Some footer</footer>
-    </>
+    )
 
 }

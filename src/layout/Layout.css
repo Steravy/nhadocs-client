@@ -14,23 +14,28 @@ aside {
     border-right: 1px solid #ccc
 }
 
+.wrapper {
+    background-color: rgba(246, 246, 244, 1);
+}
+
 
 .content{
-    width: 100%;
+    max-width: 100%;
     /* background-color: #eee; */
     background-color: rgba(246, 246, 244, 1);
 
 }
 
 .midle-section .content {
-    padding: 90px 60px
+    padding: 20px 40px
 }
 
 .midle-section {
-    display: flex;
-    gap: 20px;
-    width: 100%;
+    /* display: flex; */
+    /* gap: 20px; */
+    max-width: 100%;
     background-color: rgba(246, 246, 244, 1);
+    
 }
 
 footer {

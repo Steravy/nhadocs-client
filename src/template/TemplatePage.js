@@ -40,7 +40,7 @@ const Dto = [
 
 export default function TemplatePage() {
     return (
-        <Box maxWidth="lg" sx={{ flexGrow: 1, p: '80px 60px', justifyContent: 'center', alignItems: 'center', mx: 'auto' }} >
+        <Box maxWidth="lg" sx={{ flexGrow: 1, p: '40px 20px', justifyContent: 'center', alignItems: 'center', mx: 'auto' }} >
             <Divider textAlign="left" sx={{ mb: '20px' }}  >INFORMAÇÃO PESSOAL</Divider>
 
 
