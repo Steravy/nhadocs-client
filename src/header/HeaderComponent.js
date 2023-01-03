@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import NavDrawerComponent from './NavDrawerComponent';
 
-const pages = ['About Us', 'FAQs', ''];
+const pages = ['About Us', 'FAQs', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function HeaderComponent() {
