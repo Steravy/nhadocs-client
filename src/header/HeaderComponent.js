@@ -32,7 +32,7 @@ export default function HideAppBar(props) {
     <React.Fragment>
       <CssBaseline />
       <HideOnScroll {...props}>
-        <AppBar>
+        <AppBar sx={appStyles}>
           <Toolbar>
             <Typography variant="h6" component="div">
               Scroll to hide App bar
@@ -55,4 +55,14 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
       </Container> */}
     </React.Fragment>
   );
+}
+
+const appStyles = {
+color: '#fff',
+background: 'rgba(255, 255, 255, 0.2)',
+// borderRadius: '16px',
+boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+backdropFilter: 'blur(5px)',
+webkitBackdropFilter: 'blur(5px)',
+border: '1px solid rgba(255, 255, 255, 0.3)',
 }
