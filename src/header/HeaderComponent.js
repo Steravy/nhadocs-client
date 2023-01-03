@@ -58,11 +58,11 @@ Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
 }
 
 const appStyles = {
-color: '#fff',
-background: 'rgba(255, 255, 255, 0.2)',
+color: '#000',
+background: 'rgba(246, 246, 244, 0.21)',
 // borderRadius: '16px',
-boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+boxShadow: '0 4px 30px rgba(246, 246, 244, 0.1)',
 backdropFilter: 'blur(5px)',
 webkitBackdropFilter: 'blur(5px)',
-border: '1px solid rgba(255, 255, 255, 0.3)',
+border: '1px solid rgba(246, 246, 244, 0.3)',
 }
