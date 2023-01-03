@@ -14,7 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import NavDrawerComponent from './NavDrawerComponent';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['About Us', 'FAQs', ''];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function HeaderComponent() {
@@ -67,33 +67,9 @@ function HeaderComponent() {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
-              {/* <NavDrawerComponent /> */}
-            </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: 'bottom',
-                horizontal: 'left',
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: 'top',
-                horizontal: 'left',
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: 'block', md: 'none' },
-              }}
-            >
-              {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+              {/* <MenuIcon /> */}
+              <NavDrawerComponent />
+            </IconButton> 
           </Box>
           <Typography
             variant="h6"
