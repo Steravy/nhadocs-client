@@ -38,8 +38,8 @@ function HeaderComponent() {
 
   return (
     <AppBar position="sticky" sx={appStyles}>
-      <Container maxWidth="xl"> 
-        <Toolbar disableGutters >
+      <Container maxWidth="xl" >
+        <Toolbar disableGutters style={{ justifyContents: 'space-between' }}>
           <Typography
             variant="h6"
             noWrap
@@ -70,7 +70,7 @@ function HeaderComponent() {
             >
               {/* <MenuIcon /> */}
               <NavDrawerComponent />
-            </IconButton> 
+            </IconButton>
           </Box>
           <Typography
             variant="h6"
@@ -102,7 +102,7 @@ function HeaderComponent() {
             ))}
           </Box>
 
-        
+
         </Toolbar>
       </Container>
     </AppBar>
