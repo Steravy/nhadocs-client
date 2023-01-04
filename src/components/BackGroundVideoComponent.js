@@ -5,7 +5,7 @@ export default function BackGroundVideoComponent() {
 
 
     return (
-        <div>
+        <div className='videoBg'>
 
         </div>
     )
