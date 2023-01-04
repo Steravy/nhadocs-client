@@ -12,7 +12,6 @@ import Button from '@mui/material/Button';
 import NavDrawerComponent from './NavDrawerComponent';
 
 const pages = ['About Us', 'FAQs', 'Blog'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function HeaderComponent() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -34,7 +33,7 @@ function HeaderComponent() {
   };
 
   return (
-    <AppBar position="sticky" sx={appStyles}>
+    <AppBar position="fixed" sx={appStyles}>
       <Container maxWidth="xl" >
         <Toolbar disableGutters >
           <Box sx={{display: 'flex', alignItems: 'center'}}>
@@ -112,10 +111,10 @@ export default HeaderComponent;
 
 const appStyles = {
   color: '#000',
-  background: 'rgba(246, 246, 244, 0.21)',
+  background: 'rgba(0, 0, 0, 0.1)',
   // borderRadius: '16px',
-  boxShadow: '0 4px 30px rgba(246, 246, 244, 0.1)',
-  backdropFilter: 'blur(5px)',
-  webkitBackdropFilter: 'blur(5px)',
-  border: '1px solid rgba(246, 246, 244, 0.3)',
+  boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+  backdropFilter: 'blur(1px)',
+  webkitBackdropFilter: 'blur(1px)',
+  // border: '1px solid rgba(0, 0, 0, 0.3)',
 }
