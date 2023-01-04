@@ -39,7 +39,7 @@ function HeaderComponent() {
   return (
     <AppBar position="sticky" sx={appStyles}>
       <Container maxWidth="xl"> 
-        <Toolbar disableGutters>
+        <Toolbar disableGutters sx={{display: 'flex', justifyContent: 'space-between'}}>
           <Typography
             variant="h6"
             noWrap
