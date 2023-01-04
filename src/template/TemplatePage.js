@@ -58,12 +58,12 @@ export default function TemplatePage() {
 
                             Dto.map((person, i) => {
                                 return <>
-                                    <ListItem sx={{ p: 0 }} >
+                                    <ListItem sx={{ p: 0 }} key={'1'}>
                                         <Typography>{person.name}</Typography>
                                     </ListItem>
 
 
-                                    <ListItem sx={{ p: 0 }} >
+                                    <ListItem sx={{ p: 0 }} key={'2'}>
                                         <ListItemIcon>
                                             <LocationOnIcon />
                                         </ListItemIcon>
@@ -72,7 +72,7 @@ export default function TemplatePage() {
                                         />
                                     </ListItem >
 
-                                    <ListItem sx={{ p: 0 }} >
+                                    <ListItem sx={{ p: 0 }} key={'3'} >
                                         <ListItemIcon>
                                             <PhoneIphoneIcon />
                                         </ListItemIcon>
@@ -81,7 +81,7 @@ export default function TemplatePage() {
                                         />
                                     </ListItem>
 
-                                    <ListItem sx={{ p: 0 }} >
+                                    <ListItem sx={{ p: 0 }} key={'4'} >
                                         <ListItemIcon>
                                             <PhoneEnabledIcon />
                                         </ListItemIcon>
@@ -90,7 +90,7 @@ export default function TemplatePage() {
                                         />
                                     </ListItem>
 
-                                    <ListItem sx={{ p: 0 }} >
+                                    <ListItem sx={{ p: 0 }} key={'5'} >
                                         <ListItemIcon>
                                             <EmailIcon />
                                         </ListItemIcon>
@@ -99,7 +99,7 @@ export default function TemplatePage() {
                                         />
                                     </ListItem>
 
-                                    <ListItem sx={{ p: 0 }} >
+                                    <ListItem sx={{ p: 0 }} key={'6'} >
                                         <ListItemIcon>
                                             <PersonIcon />
                                         </ListItemIcon>
