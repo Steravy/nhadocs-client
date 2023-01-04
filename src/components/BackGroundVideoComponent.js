@@ -1,5 +1,4 @@
-import { withTheme } from '@emotion/react'
-import videoBg from '../assets/videoBg.mp4'
+import videoBg from '../assets/videoBg.mp4';
 
 
 export default function BackGroundVideoComponent() {
@@ -18,6 +17,7 @@ export default function BackGroundVideoComponent() {
 }
 
 const videobgStyles = {
+    position: 'relative',
     width: '100%',
     height: '100%',
 }
@@ -38,6 +38,7 @@ const greetingMessage = {
     justifyContent: 'center',
     alignItems: 'center',
     color: 'white',
+    fontSize: '1em'
 
 
 }
