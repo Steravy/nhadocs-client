@@ -38,6 +38,7 @@ function HeaderComponent() {
       <Container maxWidth="xl" >
         <Toolbar disableGutters >
           <Box sx={{display: 'flex', alignItems: 'center'}}>
+            <Box>
             <Typography
               variant="h6"
               noWrap
@@ -56,6 +57,7 @@ function HeaderComponent() {
             >
               nhaDocs
             </Typography>
+            </Box>
 
             <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
               <IconButton
