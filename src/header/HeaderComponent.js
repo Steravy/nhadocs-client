@@ -39,7 +39,7 @@ function HeaderComponent() {
   return (
     <AppBar position="sticky" sx={appStyles}>
       <Container maxWidth="xl"> 
-        <Toolbar disableGutters sx={{display: 'flex', justifyContent: 'space-between'}}>
+        <Toolbar disableGutters >
           <Typography
             variant="h6"
             noWrap
@@ -49,8 +49,9 @@ function HeaderComponent() {
               mr: 2,
               display: { xs: 'none', md: 'flex' },
               fontFamily: 'monospace',
-              fontWeight: 300,
-              letterSpacing: '.1rem',
+              fontSize: '1.4rem',
+              fontWeight: 500,
+              // letterSpacing: '.1rem',
               color: 'inherit',
               textDecoration: 'none',
             }}
