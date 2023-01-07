@@ -1,6 +1,6 @@
 import { Paper } from "@mui/material";
 import { Outlet } from "react-router-dom";
-import HeaderComponent from "../header/HeaderComponent";
+import HeaderComponent from "../components/header/HeaderComponent";
 import './Layout.css';
 
 
@@ -9,7 +9,6 @@ export default function Layout() {
     return (
         <div className="wrapper">
 
-            {/* We must have a top bar here */}
             <HeaderComponent />
 
 
