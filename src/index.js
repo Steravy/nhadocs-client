@@ -6,6 +6,7 @@ import "./index.css";
 import Layout from "./layout/Layout";
 import reportWebVitals from "./reportWebVitals";
 import CvTemplatePage from "./pages/template/TemplatePage";
+import About from "./pages/About";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -16,7 +17,7 @@ root.render(
           <Route index element={<Home />} />
 
           <Route path="/template" element={<CvTemplatePage />} />
-          <Route path="/about" element={<CvTemplatePage />} />
+          <Route path="/about" element={<About />} />
           <Route path="/blog" element={<CvTemplatePage />} />
           <Route path="/fqa" element={<CvTemplatePage />} />
           <Route path="/create" element={<CvTemplatePage />} />
