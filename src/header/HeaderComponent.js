@@ -10,8 +10,9 @@ import Button from '@mui/material/Button';
 
 
 import NavDrawerComponent from './NavDrawerComponent';
+import { Link } from '@mui/material';
 
-const pages = ['About Us', 'FAQs', 'Blog'];
+const pages = ['About Us', 'Blog', 'FAQs', 'Criar Curriculum'];
 
 function HeaderComponent() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -96,7 +97,7 @@ function HeaderComponent() {
                   onClick={handleCloseNavMenu}
                   sx={{ my: 2, color: '#000', display: 'block' }}
                 >
-                  {page}
+                  <Link sx={{color: '#fff', textDecoration: 'none'}} href='/template'>{page}</Link>
                 </Button>
               ))}
             </Box>
