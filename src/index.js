@@ -5,7 +5,7 @@ import Home from "./home/Home";
 import "./index.css";
 import Layout from "./layout/Layout";
 import reportWebVitals from "./reportWebVitals";
-import CvTemplatePage from "./template/TemplatePage";
+import CvTemplatePage from "./pages/template/TemplatePage";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
