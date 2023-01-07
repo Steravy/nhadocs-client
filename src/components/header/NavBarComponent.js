@@ -1,6 +1,18 @@
 import { AppBar, Container } from "@mui/material";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import "./Navbar.css";
+import { GiRocketThruster } from "react-icons/gi";
+import { FaBars, FaTimes } from "react-icons/fa";
+import { IconContext } from "react-icons/lib";
+import { NavLink } from "react-router-dom";
 
 export default function NavBarComponent() {
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
   return (
     <AppBar>
       <IconContext.Provider value={{ color: "#fff" }}>
