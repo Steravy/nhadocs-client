@@ -21,7 +21,7 @@ export default function NavBarComponent() {
             <div className="navbar-container container">
               <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                 <GiRocketThruster className="navbar-icon" />
-                Skye
+                nhaDocs
               </Link>
               <div className="menu-icon" onClick={handleClick}>
                 {click ? <FaTimes /> : <FaBars />}
