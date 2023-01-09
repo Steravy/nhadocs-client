@@ -1,7 +1,7 @@
 import { AppBar, Container } from "@mui/material";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Navbar.css";
+import "./NavBarComponent.css";
 import { GiRocketThruster } from "react-icons/gi";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
