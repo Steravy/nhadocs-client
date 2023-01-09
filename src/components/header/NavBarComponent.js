@@ -60,6 +60,17 @@ export default function NavBarComponent() {
                     Contact
                   </NavLink>
                 </li>
+                <li className="nav-item">
+                  <NavLink
+                    to="/create"
+                    className={({ isActive }) =>
+                      "nav-links" + (isActive ? " activated" : "")
+                    }
+                    onClick={closeMobileMenu}
+                  >
+                    Faq
+                  </NavLink>
+                </li>
               </ul>
             </div>
           </nav>
